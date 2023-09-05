@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended",
+    // 启用与 Prettier 推荐的格式化规则相匹配的 ESLint 规则
+    "plugin:prettier/recommended"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "vue",
+    // 告诉 ESLint 关闭与 Prettier 格式化规则冲突的任何规则
+    "prettier"
+  ],
+  "rules": {
+    "quotes": [
+      "error",
+      "double"
+    ]
+  }
+}
