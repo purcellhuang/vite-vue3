@@ -1,4 +1,5 @@
 <template>
+  <svg-icon name="page" />
   <div>HOME</div>
 </template>
 
